@@ -1,0 +1,5 @@
+- shell:
+    - [  curl -sS https://starship.rs/install.sh | sh -s -- --yes, Installing starship ]
+
+- link:
+      ~/.config/starship.toml: configs/starship.toml

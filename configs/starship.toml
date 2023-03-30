@@ -1,0 +1,22 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# 5m
+command_timeout = 300000
+
+[git_metrics]
+added_style = 'bold blue'
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+disabled = false
+
+[kubernetes]
+format = 'on [⛵ $context \($namespace\)](dimmed green) '
+disabled = false
+[kubernetes.context_aliases]
+'dev.local.cluster.k8s' = 'dev'
+'gke_.*_(?P<var_cluster>[\w-]+)' = 'gke-$var_cluster'
+'admin@og' = 'HomeLab'
+[sudo]
+style = 'bold green'
+symbol = '👩‍💻 '
+disabled = false

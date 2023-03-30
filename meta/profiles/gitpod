@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ubuntu-common-sudo
+tailscale-ubuntu-sudo
+git
+oh-my-zsh
+starship
+paths
+zsh
+nvim

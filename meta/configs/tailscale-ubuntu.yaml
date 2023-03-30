@@ -1,0 +1,7 @@
+- shell:
+    - [ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg |  apt-key add -, Adding tailscale gpg]
+    - [ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list |  tee /etc/apt/sources.list.d/tailscale.list, Adding tailscale to source list]
+- apt:
+      - tailscale
+- shell:
+    - [ update-alternatives --set ip6tables /usr/sbin/ip6tables-nft ]

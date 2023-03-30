@@ -1,0 +1,11 @@
+#!/bin/bash
+
+paths
+brew
+git
+oh-my-zsh
+starship
+zsh
+macos-ssh
+macos-env
+nvim

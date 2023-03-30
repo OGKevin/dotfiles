@@ -1,0 +1,36 @@
+# Path to your oh-my-zsh installation.
+ZSH="$HOME/.oh-my-zsh"
+
+PATH=$(~/scripts/path_helper -p --config)
+export PATH
+
+envFile=~/.env
+
+if test -f "$envFile"; then
+  source ~/.env
+fi
+
+#Theme
+ZSH_THEME=""
+
+#Plugins
+plugins=(
+  git
+  colorize
+  command-not-found
+  cp
+  mosh
+  fasd
+  docker
+  golang
+  httpie
+  kubectl
+  gcloud
+  terraform
+  tmux
+  z
+)
+
+eval "$(starship init zsh)"
+
+source $ZSH/oh-my-zsh.sh

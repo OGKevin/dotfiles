@@ -1,0 +1,2 @@
+- shell:
+    - apk add --update --no-cache tmux httpie neovim ruby

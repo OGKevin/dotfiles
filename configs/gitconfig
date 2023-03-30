@@ -1,0 +1,33 @@
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPYZPvNNABS+x1ueJd8zOCN4txpXYbpUG9zNy0fsVAAj
+  name = Kevin Hellemun
+  email = 17928966+OGKevin@users.noreply.github.com
+[core]
+  excludesFile = ~/.gitignore
+[commit]
+  gpgSign = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[pull]
+  ff = only
+[tag]
+  forceSignAnnotated = true
+[diff]
+  tool = vscode
+[difftool "vscode"]
+   cmd = code --wait --diff --new-window $LOCAL $REMOTE
+[merge]
+   tool = vscode
+[mergetool]
+   keepBackup = false
+[mergetool "vscode"]
+    cmd = code --wait --new-window $MERGED
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[rerere]
+	enabled = true

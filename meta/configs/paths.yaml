@@ -1,0 +1,10 @@
+- link:
+    ~/.config/paths/paths.d/:
+        glob: true
+        path: configs/paths.d/*
+
+- shell:
+    - chmod +x meta/path_helper/exe/path_helper
+
+- link:
+    ~/scripts/path_helper: meta/path_helper/exe/path_helper
