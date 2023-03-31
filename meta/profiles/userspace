@@ -5,5 +5,7 @@ git
 oh-my-zsh
 starship
 paths
+envs
+scripts
 zsh
 nvim

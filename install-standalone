@@ -100,6 +100,7 @@ for config in ${@}; do
     "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}"
     --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/apt"
     --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/brew"
+    --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/git"
      -c "$configFile"
   )
 

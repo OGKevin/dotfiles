@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER Kevin Hellemun
 LABEL maintainer="Kevin Hellemun"
 LABEL org.opencontainers.image.source=https://github.com/OGKevin/dotfiles
 
@@ -17,28 +16,28 @@ RUN \
     echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk upgrade --no-cache && \
     apk add --update --no-cache \
-        sudo \
-        autoconf \
-        automake \
-        libtool \
-        nasm \
-        ncurses \
-        ca-certificates \
-        libressl \
-        bash-completion \
-        cmake \
-        ctags \
-        file \
-        curl \
-        build-base \
-        gcc \
-        coreutils \
-        wget \
-        neovim \
-        git git-doc \
-        zsh \
-        docker \
-        docker-compose
+    sudo \
+    autoconf \
+    automake \
+    libtool \
+    nasm \
+    ncurses \
+    ca-certificates \
+    libressl \
+    bash-completion \
+    cmake \
+    ctags \
+    file \
+    curl \
+    build-base \
+    gcc \
+    coreutils \
+    wget \
+    neovim \
+    git git-doc \
+    zsh \
+    docker \
+    docker-compose
 
 
 RUN \
@@ -48,10 +47,10 @@ RUN \
 
 COPY ./ /home/${user}/.dotfiles/
 RUN \
-     git config --global --add safe.directory /home/${user}/.dotfiles && \
-     chown -R ${user}:${group} /home/${user}/.dotfiles && \
-     cd /home/${user}/.dotfiles && \
-     git remote set-url origin git@${vcsprovider}:${vcsowner}/${dotfiles}
+    git config --global --add safe.directory /home/${user}/.dotfiles && \
+    chown -R ${user}:${group} /home/${user}/.dotfiles && \
+    cd /home/${user}/.dotfiles && \
+    git remote set-url origin git@${vcsprovider}:${vcsowner}/${dotfiles}
 
 USER ${user}
 RUN \

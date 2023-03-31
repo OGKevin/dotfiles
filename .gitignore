@@ -1,4 +1,4 @@
-Brewfile.*.lock.json
+configs/brewfile.lock.json
 secrets.*
 credentials.*
 .pkrvars.hcl

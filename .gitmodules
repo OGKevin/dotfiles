@@ -10,3 +10,6 @@
 [submodule "meta/path_helper"]
 	path = meta/path_helper
 	url = https://github.com/yb66/path_helper.git
+[submodule "meta/dotbot-plugins/git"]
+	path = meta/dotbot-plugins/git
+	url = https://github.com/DrDynamic/dotbot-git.git

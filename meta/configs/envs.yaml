@@ -1,0 +1,5 @@
+- link:
+    ~/.config/envs.d/:
+        glob: true
+        path: configs/envs.d/*
+
