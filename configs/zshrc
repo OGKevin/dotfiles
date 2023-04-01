@@ -12,6 +12,9 @@ fi
 
 eval $(load-env.sh)
 
+# GVM
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 #Theme
 ZSH_THEME=""
 
