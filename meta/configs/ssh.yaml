@@ -1,0 +1,5 @@
+- create:
+  - $HOME/.ssh
+
+- shell:
+  - curl https://github.com/ogkevin.keys > $HOME/.ssh/authorized_keys
