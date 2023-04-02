@@ -25,3 +25,9 @@ tasks:
     cmds:
       - rm -rf $HOME/.oh-my-zsh
       - ./install-profle macos
+
+  install-arch:
+    cmds:
+      - rm -rf $HOME/.oh-my-zsh
+      - ./install-profle arch
+ 

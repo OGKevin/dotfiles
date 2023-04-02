@@ -1,2 +1,4 @@
 - link:
     ~/.gitconfig: configs/gitconfig
+- shell:
+    - [git remote set-url origin git@github.com:ogkevin/dotfiles.git, setting git remote to ssh] 

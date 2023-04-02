@@ -3,10 +3,9 @@
 paths
 envs
 scripts
-brew
+#brew
 git
 oh-my-zsh
-starship
+starship-sudo
 zsh
-macos-ssh
 nvim
