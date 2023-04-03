@@ -1,27 +1,23 @@
 # https://taskfile.dev
 
-version: '3'
-
+version: "3"
 vars:
   GREETING: Hello, World!
   ghcr: ghcr.io/ogkevin
-
 tasks:
   default:
     cmds:
       - echo "{{.GREETING}}"
     silent: true
-
   build:
     deps: [build_gitpod, build_userspace]
-  build_gitpod:
+  build-gitpod:
     cmds:
       - docker build -f dockerfiles/gitpod.Dockerfile -t {{.ghcr}}/gitpod .
-  build_userspace:
+  build-userspace:
     cmds:
       - docker build -f dockerfiles/Dockerfile -t {{.ghcr}}/userspace .
-
-  install_macos:
+  install-macos:
     cmds:
       - rm -rf $HOME/.oh-my-zsh
       - ./install-profle macos

@@ -6,7 +6,10 @@ brew "go-task"
 brew "nnn"
 brew "lazygit"
 
-tap "homebrew/cask-fonts"
 
+tap "homebrew/cask-fonts"
 cask "font-symbols-only-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
+
+cask "alacritty"
+

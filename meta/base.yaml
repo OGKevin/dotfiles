@@ -11,10 +11,9 @@
     brew:
       stderr: False,
       stdout: False,
-
 - create:
     - $HOME/.config
-
+    - $HOME/bin
 - clean:
     $HOME:
       force: true
