@@ -13,3 +13,6 @@
 [submodule "meta/dotbot-plugins/git"]
 	path = meta/dotbot-plugins/git
 	url = https://github.com/DrDynamic/dotbot-git.git
+[submodule "meta/dotbot-plugins/omnipkg"]
+	path = meta/dotbot-plugins/omnipkg
+	url = https://github.com/code-maniac/dotbot-omnipkg

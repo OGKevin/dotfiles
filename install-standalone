@@ -101,6 +101,7 @@ for config in ${@}; do
     --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/apt"
     --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/brew"
     --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/git"
+    --plugin-dir "${BASE_DIR}/${META_DIR}/${PLUGINS_DIR}/omnipkg"
      -c "$configFile"
   )
 
