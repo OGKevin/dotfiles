@@ -1,0 +1,12 @@
+- create:
+  - ~/.nb
+- shell:
+  - wget -O ~/bin/obsidian https://github.com/obsidianmd/obsidian-releases/releases/download/v1.1.16/Obsidian-1.1.16.AppImage
+  - chmod +x ~/bin/obsidian
+- git:
+    ~/.nb/obsidian:
+      url: git@github.com:ogkevin/obsidian.git
+      description: obsidian notes
+      method: clone-or-pull
+      branch: main
+
