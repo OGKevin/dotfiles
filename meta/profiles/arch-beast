@@ -11,4 +11,5 @@ zsh
 nvim
 ssh
 alacritty
-awesomewm
+awesome
+rofi

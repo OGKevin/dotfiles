@@ -1,0 +1,6 @@
+- create:
+  - ~/.config/awesome
+- link:
+    ~/.config/awesome/:
+      path: configs/awesome/*
+      glob: true

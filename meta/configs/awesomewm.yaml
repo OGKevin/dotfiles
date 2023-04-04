@@ -1,4 +1,0 @@
-- create:
-  - ~/.config/awesome
-- link:
-    ~/.config/awesome/rc.lua: configs/awesome.lua
