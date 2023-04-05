@@ -1,8 +1,13 @@
 - create:
     - $HOME/.config/nvim
+    - $HOME/.config/nvim/lua/user
 - git:
     ~/.config/nvim:
       url: https://github.com/AstroNvim/AstroNvim
       branch: main
       method: clone-or-pull
       description: Astro nvim
+- link:
+    ~/.config/nvim/lua/user:
+      glob: true
+      path: configs/astrovim/*
