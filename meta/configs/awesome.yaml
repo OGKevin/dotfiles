@@ -4,3 +4,4 @@
     ~/.config/awesome/:
       path: configs/awesome/*
       glob: true
+    ~/.config/picom/picom.conf: configs/picom/picom.conf
