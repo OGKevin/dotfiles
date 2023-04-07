@@ -1,1 +1,2 @@
 require(... .. ".autostart")
+require(... .. ".keys")
