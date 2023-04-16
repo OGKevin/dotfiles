@@ -10,7 +10,9 @@ if test -f "$envFile"; then
   source ~/.env
 fi
 
-eval $(load-env.sh)
+envtmp=$(mktemp)
+load-env.sh > $envtmp
+source $envtmp
 
 # GVM
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"

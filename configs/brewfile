@@ -5,6 +5,7 @@ brew "neovim"
 brew "go-task"
 brew "nnn"
 brew "lazygit"
+brew "pinentry-mac"
 
 
 tap "homebrew/cask-fonts"

@@ -1,5 +1,5 @@
 [user]
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPYZPvNNABS+x1ueJd8zOCN4txpXYbpUG9zNy0fsVAAj
+  signingkey = F077F10DC02591D8982B2EF48D0EA7EC21CBF0A0
   name = Kevin Hellemun
   email = 17928966+OGKevin@users.noreply.github.com
 [core]
@@ -28,6 +28,6 @@
 [init]
 	defaultBranch = main
 [gpg]
-	format = ssh
+	format = openpgp
 [rerere]
 	enabled = true
