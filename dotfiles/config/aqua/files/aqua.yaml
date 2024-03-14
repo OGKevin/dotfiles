@@ -1,0 +1,16 @@
+registries:
+  - type: standard
+    ref: v4.79.0 # renovate: depName=aquaproj/aqua-registry
+  - name: local
+    type: local
+    path: registry.yaml
+packages:
+  - name: hashicorp/terraform
+    version: v1.7.4
+  - name: cli/cli
+    version: v2.45.0
+  - name: terraform-linters/tflint
+    version: v0.50.3
+  - name: crates.io/git-repo-manager
+    registry: local
+    version: v0.7.15

@@ -1,0 +1,277 @@
+trees:
+  - root: "~/.config/"
+    repos:
+      - name: "nvim"
+        remotes:
+          - name: "origin"
+            url: "https://github.com/AstroNvim/AstroNvim.git"
+            type: "https"
+  - root: ~/projects/gitlab.molops.io
+    repos:
+      - name: infra/tfe/tf-mcp-projects
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/tf-mcp-projects.git
+            type: ssh
+      - name: infra/tfe/tf-pagerduty
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/tf-pagerduty.git
+            type: ssh
+      - name: infra/tfe/tf-projects
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/tf-projects.git
+            type: ssh
+      - name: infra/tfe/tf-usermanagement
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/tf-usermanagement.git
+            type: ssh
+      - name: infra/tfe/modules/terraform-google-mollie-mysql
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/modules/terraform-google-mollie-mysql.git
+            type: ssh
+      - name: infra/tfe/modules/tf-mcp-mysql-pd
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/modules/terraform-google-mollie-mysql-pagerduty.git
+            type: ssh
+          - name: personal
+            url: git@gitlab.molops.io:kevin.hellemun/tf-mcp-mysql-pd.git
+            type: ssh
+      - name: infra/tfe/modules/terraform-google-mollie-dynamic-web-application
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/modules/terraform-google-mollie-dynamic-web-application.git
+            type: ssh
+      - name: infra/tools/renovate-bot
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/renovate-bot.git
+            type: ssh
+      - name: infra/go-infra.bak
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/go-infra.git
+            type: ssh
+      - name: infra/reliability/incident-analysis
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/reliability/incident-analysis.git
+            type: ssh
+      - name: infra/reliability/rolodex-sync
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/reliability/pagerduty/rolodex-sync.git
+            type: ssh
+      - name: infra/ansible-true/configuration
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/ansible-true/configuration.git
+            type: ssh
+      - name: infra/base-images-app
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/base-images/base-images-app.git
+            type: ssh
+      - name: infra/go-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/go-infra.git
+            type: ssh
+      - name: khellemun/payout-check
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:kevin.hellemun/pd-payout-checker.git
+            type: ssh
+      - name: khellemun/mdb-ansible
+        worktree_setup: true
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:kevin.hellemun/mdb-ansible.git
+            type: ssh
+      - name: khellemun/dd-usage-syncer
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/reliability/dd-usage-syncer.git
+            type: ssh
+      - name: gaya/pagerduty-integration-rolodex
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:gayathiri.palanisamy/pagerduty-integration-rolodex.git
+            type: ssh
+      - name: audit/policies
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:audit/policies.git
+            type: ssh
+      - name: applications/data-events/data-events-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/data-events/data-events-infra.git
+            type: ssh
+      - name: applications/data-events/data-events-registry
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/data-events/data-events-registry.git
+            type: ssh
+      - name: applications/data-events/schema-registry
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/data-events/schema-registry.git
+            type: ssh
+      - name: applications/pci-backuplake/pci-backuplake-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/pci-backuplake/pci-backuplake-infra.git
+            type: ssh
+      - name: applications/db-audit/db-audit-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/db-audit/db-audit-infra.git
+            type: ssh
+      - name: applications/mdbm/mdbm-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/mdbm/mdbm-infra.git
+            type: ssh
+      - name: applications/shopify-payments/shopify-payments-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/shopify-payments/shopify-payments-infra.git
+            type: ssh
+      - name: applications/incident-bot/infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/incident-bot/incident-bot-infra.git
+            type: ssh
+      - name: applications/mcp-tools/mcp-tools-app
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/mcp-tools/mcp-tools-app.git
+            type: ssh
+      - name: applications/mcp-tools/mcp-tools-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/mcp-tools/mcp-tools-infra.git
+            type: ssh
+      - name: applications/backuplake/backuplake-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/backuplake/backuplake-infra.git
+            type: ssh
+      - name: applications/gsak/gsak-app
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/gsak/gsak-app.git
+            type: ssh
+      - name: applications/backstage/backstage-app
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/backstage/backstage-app.git
+            type: ssh
+      - name: applications/pci-mdbm/pci-mdbm-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/pci-mdbm/pci-mdbm-infra.git
+            type: ssh
+      - name: applications/dbtesting/dbtesting-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/dbtesting/dbtesting-infra.git
+            type: ssh
+      - name: applications/molliebot/molliebot-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/molliebot/molliebot-infra.git
+            type: ssh
+      - name: infrastructure/tools/platforms
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/platforms.git
+            type: ssh
+      - name: infrastructure/ansible
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/ansible.git
+            type: ssh
+      - name: infrastructure/terraform_enterprise/tf-dns
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/tf-dns.git
+            type: ssh
+      - name: infrastructure/terraform_enterprise/tf-usermanagement
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/tf-usermanagement.git
+            type: ssh
+      - name: infrastructure/terraform_enterprise/modules/terraform-google-mollie-mdbm
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/modules/terraform-google-mollie-mdbm.git
+            type: ssh
+      - name: infrastructure/terraform_enterprise/modules/terraform-google-mollie-mysql-v4
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tfe/modules/terraform-google-mollie-mysql-v4.git
+            type: ssh
+      - name: infrastructure/molliebot
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:infra/tools/molliebot.git
+            type: ssh
+      - name: apps/mcp-tools/mcp-tools-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/mcp-tools/mcp-tools-infra.git
+            type: ssh
+      - name: dbtesting/dbtesting-infra
+        worktree_setup: false
+        remotes:
+          - name: origin
+            url: git@gitlab.molops.io:apps/dbtesting/dbtesting-infra.git
+            type: ssh

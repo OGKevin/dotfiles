@@ -1,0 +1,6 @@
+packages:
+  - name: crates.io/git-repo-manager
+    type: cargo
+    crate: git-repo-manager
+    files:
+      - name: grm
